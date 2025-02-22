@@ -1,0 +1,63 @@
+.privacy {
+    .container {
+        padding: 0 15px;
+    }
+    .flex {
+        display: flex;
+        margin-top: 20px;
+        border: 1px solid #000;
+        flex-direction: column;
+        &__items {
+            position: relative;
+            height: auto;
+            display: flex;
+            margin-bottom: 0;
+            &-item {
+                padding: 12px;
+                width: 400px;
+                border: 1px solid #000;
+                align-content: center;
+            }
+            &-second {
+                padding: 12px 12px 12px 30px;
+                width: 100%;
+                border: 1px solid #000;
+                position: relative;
+                align-content: center;
+                &:before{
+                    content: '';
+                    position: absolute;
+                    top: 45%;
+                    left: 15px;
+                    width: 7px;
+                    height: 7px;
+                    border-radius: 100%;
+                    background: #000;
+                }
+            }
+            span{
+                position: relative;
+                &:before{
+                    content: '';
+                    position: absolute;
+                    top: 38%;
+                    left: -15px;
+                    width: 7px;
+                    height: 7px;
+                    border-radius: 100%;
+                    background: #000;
+                }
+            }
+            
+        }
+        &-item {
+            display: flex;
+            flex-direction: column;
+            &:before {
+                display: none;
+            }
+        }
+    }
+
+    
+}
